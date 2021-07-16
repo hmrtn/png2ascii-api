@@ -27,6 +27,22 @@ still be available.
 * `make service` to start the service on port 8080 -- Note: host & port is hard-coded
 * `make test` to run API feature tests -- includes testing ASCII-fying and directory existence
 
+#### Examples
+
+`POST` an image: 
+
+```bash
+$ curl -X POST --data-binary @IMAGE.png localhost:8080/images
+```
+
+`GET` avliable ASCII image or list avaliable ASCII images:
+
+```bash
+$ curl http://localhost:8080/images/<image_id>
+
+$ curl http://localhost:8080/images/
+```
+
 ## Improvements
 
 - Testing could be improved (i.e start the server and then perform tests)
