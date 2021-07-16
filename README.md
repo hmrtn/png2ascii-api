@@ -15,7 +15,7 @@ that can be retrieved later.
 
 ## Implementation
 
-The `png2ascii_api` uses the `Fiber` web framework to capture PNG 
+The `png2ascii-api` uses the `Fiber` web framework to capture PNG 
 image files and ASCII-fy them (with `image2ascii`), responding with a unique 
 identifier that can be used to retrieve the ASCII-fied image. The ASCII images 
 are persisted, so if the service is stopped and restarted, the data should 
@@ -39,5 +39,5 @@ still be available.
 
 * [Go image library](https://golang.org/pkg/image/)
 * [image2ascii library](https://github.com/qeesung/image2ascii)
-* [Fiber](https://github.com/gofiber/fiber)
-* [uuid](https://github.com/google/uuid)
+* [Fiber library](https://github.com/gofiber/fiber)
+* [uuid library](https://github.com/google/uuid)
